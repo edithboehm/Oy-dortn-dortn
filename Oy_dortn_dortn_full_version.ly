@@ -3,9 +3,10 @@
 
 \score {
     <<
-        \new ChordNames r4 \repeat unfold 5 \chordNames
+        \new ChordNames r4 \repeat unfold 6 \chordNames
         \new Staff {
             \voicePartial \voice
+            \voiceBeginning \voice
             \voiceBeginning \voice r4
             \repeat unfold 15 r1 r2.
             \voiceBeginning \voice
@@ -17,6 +18,7 @@
             \verseTwo
             \verseThree
             \verseFour
+            \verseOne
         }
         \new Staff \with {
             midiInstrument = #"violin"

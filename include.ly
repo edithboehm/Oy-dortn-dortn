@@ -58,9 +58,18 @@ violin = \relative c' {
     % Die Geige folgt hier.
 
     r4
-    \repeat unfold 32 r1
-
-    r4 a'8 h c4. h8 | \tuplet 3/2 { a4 h c } c2 |
+    \repeat unfold 15 r1 r2. e'8 c |
+    a1 | a2. d8 c |
+    a1 | a2. r4 | r1 | r1 |
+    r4 e'8 f g f e d | e2. r4 |
+    r1 | r1 |
+    r1 | r1 |
+    r1 | r1 |
+    r1 | r1 |
+    a,1 | r4 e'8 f e4 r4 |
+    r1 | r8 c h c c r8 r4 |
+    \repeat unfold 12 r1
+    r4 a8 h c4. h8 | \tuplet 3/2 { a4 h c } c2 |
     r4 a8 h c4. h8  | \tuplet 3/2 { a4 h c } c4 c8 d |
     e4 e e e | g2 f8 e d c |
     e1~ | e2. e8 f | g4 g g4. e8 |
