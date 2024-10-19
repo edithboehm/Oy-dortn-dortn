@@ -5,12 +5,6 @@
     <<
   		\new ChordNames \chordNames
   		\new Staff { \new Voice = "melody" {\melody }}
-  		%\new Staff \with {
-        %        midiInstrument = "violin"
-        %        midiMaximumVolume = #0.6
-        %    } {
-        %      \solo
-        %    }
         \new Lyrics \lyricsto "melody" {
             <<
             \verseOne

@@ -15,13 +15,15 @@ scoreTempo = \tempo 4 = 180 % BPM
 
 chordNames = \chordmode {
 
+    \set chordChanges = ##t
+
     % Akkorde folgen hier.
 
-    r4
+    a4:m
     a1:m | a:m      |  a:m | a:m
     c    | f2 g2    |  c1  | c
     e1:m | c        |  e:m | f
-    a:m  | d2:m e:7 | a1:m | a1:m
+    a:m  | d2:m e:7 | a1:m | a2.:m
 }
 
 melody = \relative c'' {
@@ -38,7 +40,7 @@ melody = \relative c'' {
     g8 f e d e4 a a2.
     a,4
     c e g e f d e4. c8
-    a1 r1
+    a1 (a2.) \bar "|."
 }
 
 solo = \relative c' {
@@ -66,7 +68,7 @@ verseOne = \lyricmode {
 	Oy, dor- tn, do- r- tn, i- bern va- - - - serl
     O- y, dor- tn, dor- tn, i- be- - - rn brik
     Fa- r- tri- bn host- u mich in di va- y- te- ne le- n- der
-    Un be- nken benk ikh oft nokh dir tsurik
+    Un be- nken benk ikh oft nokh dir tsu- rik
 }
 
 verseTwo = \lyricmode {
