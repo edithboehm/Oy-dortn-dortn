@@ -22,11 +22,11 @@
             midiInstrument = #"violin"
             midiMaximumVolume = #0.8
         } \violin
-        \new Staff \with {
-            midiInstrument = #"accordion"
-            midiMaximumVolume = #0.8
-        } \accordion
+        %\new Staff \with {
+        %    midiInstrument = #"accordion"
+        %    midiMaximumVolume = #0.8
+        %} \accordion
     >>
-    \layout { }
+    \layout { #(layout-set-staff-size 16) }
     \midi { }
 }

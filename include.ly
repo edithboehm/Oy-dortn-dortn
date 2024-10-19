@@ -19,7 +19,7 @@ chordNames = \chordmode {
 
     % Akkorde folgen hier.
 
-    a4:m
+    a4:m |
     a1:m | a:m      |  a:m | a:m
     c    | f2 g2    |  c1  | c
     e1:m | c        |  e:m | f
@@ -43,15 +43,12 @@ voice = \relative c' {
 
     % Die Melodie folgt hier.
 
-    e'4 d e c a2. a8 a8 e'4 d e c
-    a2. e'8 f g4 g g g a2 g8 f e d
-    e1 (e2.) e8 f
-    g4 g g4. e8
-    c2. e8 f
-    g8 f e d e4 a a2.
-    a,4
-    c e g e f d e4. c8
-    a1 (a2.)
+    e'4 d e c | a2. a8 a8 | e'4 d e c |
+    a2. e'8 f | g4 g g g | a2 g8 f e d |
+    e1~ | e2. e8 f | g4 g g4. e8 |
+    c2. e8 f | g8 f e d e4 a |
+    a2. a,4 | c e g e | f d e4. c8 |
+    a1~ | a2.
 }
 
 violin = \relative c' {
