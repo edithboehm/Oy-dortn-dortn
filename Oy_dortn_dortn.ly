@@ -4,7 +4,7 @@
 \score {
     <<
   		\new ChordNames \chordNames
-  		\new Staff { \new Voice = "melody" {\melody }}
+  		\new Staff { \new Voice = "melody" {\melodyPartial \melody \melodyEnd }}
         \new Lyrics \lyricsto "melody" {
             <<
             \verseOne

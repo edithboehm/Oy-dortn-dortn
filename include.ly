@@ -26,13 +26,24 @@ chordNames = \chordmode {
     a:m  | d2:m e:7 | a1:m | a2.:m
 }
 
-melody = \relative c'' {
+melodyPartial = \relative c'' {
+    \scoreTempo
+    \partial 4 a4
+}
+
+melodyBeginning = \relative c'' {
+    a4
+}
+
+melodyEnd = \relative c'' {
+    \bar "|."
+}
+
+melody = \relative c' {
 
     % Die Melodie folgt hier.
-    \scoreTempo
 
-    \partial 4 a4
-    e' d e c a2. a8 a8 e'4 d e c
+    e'4 d e c a2. a8 a8 e'4 d e c
     a2. e'8 f g4 g g g a2 g8 f e d
     e1 (e2.) e8 f
     g4 g g4. e8
@@ -40,14 +51,13 @@ melody = \relative c'' {
     g8 f e d e4 a a2.
     a,4
     c e g e f d e4. c8
-    a1 (a2.) \bar "|."
+    a1 (a2.)
 }
 
 solo = \relative c' {
 
     % Das Solo folgt hier.
 
-    \partial 4 r4
     r4 a'8 h c4. h8 \tuplet 3/2 { a4 h c } c2
     r4 a8 h c4. h8 \tuplet 3/2 { a4 h c } c4 c8 d
     e4 e e e g2 f8 e d c
@@ -58,7 +68,7 @@ solo = \relative c' {
     a2. g8 f
     e4 d c4. d16 c
     h4 h a as
-    a1
+    a1 (a2.)
 }
 
 verseOne = \lyricmode {
