@@ -3,7 +3,7 @@
 
 \score {
     <<
-        \new ChordNames r4 \repeat unfold 6 \chordNames
+        \new ChordNames \repeat unfold 6 \chordNames
         \new Staff {
             \voicePartial \voice
             \voiceBeginning \voice
