@@ -4,20 +4,20 @@
 \score {
     <<
   		\new ChordNames \chordNames
-  		\new Staff { \new Voice = "melody" {\melodyPartial \melody \melodyEnd }}
-        \new Lyrics \lyricsto "melody" {
+  		\new Staff { \new Voice = "voice" {\voicePartial \voice \voiceEnd }}
+        \new Lyrics \lyricsto "voice" {
             <<
             \verseOne
         	\new Lyrics {
-        	  \set associatedVoice = "melody"
+        	  \set associatedVoice = "voice"
         	  \verseTwo
         	}
         	\new Lyrics {
-              \set associatedVoice = "melody"
+              \set associatedVoice = "voice"
               \verseThree
             }
             \new Lyrics {
-              \set associatedVoice = "melody"
+              \set associatedVoice = "voice"
               \verseFour
             }
         	>>

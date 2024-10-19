@@ -26,20 +26,20 @@ chordNames = \chordmode {
     a:m  | d2:m e:7 | a1:m | a2.:m
 }
 
-melodyPartial = \relative c'' {
+voicePartial = \relative c'' {
     \scoreTempo
     \partial 4 a4
 }
 
-melodyBeginning = \relative c'' {
+voiceBeginning = \relative c'' {
     a4
 }
 
-melodyEnd = \relative c'' {
+voiceEnd = \relative c'' {
     \bar "|."
 }
 
-melody = \relative c' {
+voice = \relative c' {
 
     % Die Melodie folgt hier.
 
@@ -54,9 +54,12 @@ melody = \relative c' {
     a1 (a2.)
 }
 
-solo = \relative c' {
+violin = \relative c' {
 
-    % Das Solo folgt hier.
+    % Die Geige folgt hier.
+
+    r4
+    \repeat unfold 32 r1
 
     r4 a'8 h c4. h8 \tuplet 3/2 { a4 h c } c2
     r4 a8 h c4. h8 \tuplet 3/2 { a4 h c } c4 c8 d
@@ -69,6 +72,18 @@ solo = \relative c' {
     e4 d c4. d16 c
     h4 h a as
     a1 (a2.)
+
+    \repeat unfold 31 r1
+    r2.
+}
+
+accordion = \relative c' {
+
+    % Das Akkordeon folgt hier.
+
+    r4
+    \repeat unfold 63 r1
+    r2.
 }
 
 verseOne = \lyricmode {
