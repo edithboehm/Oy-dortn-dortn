@@ -1,10 +1,16 @@
 \version "2.24.4"
 \include "include.ly"
+\include "violin.ly"
+\include "accordion.ly"
 
 \score {
     <<
-        \new ChordNames \repeat unfold 6 \chordNames
-        \new Staff {
+        \new ChordNames \with {
+           midiMaximumVolume = #0.8
+       } \repeat unfold 6 \chordNames
+        \new Staff \with {
+            midiMaximumVolume = #1
+        }{
             \voicePartial \voice
             \voiceBeginning \voice
             \voiceBeginning \voice r4
@@ -21,7 +27,7 @@
             \verseOne
         }
         \new Staff \with {
-            midiInstrument = #"violin"
+            midiInstrument = #"drawbar organ"
             midiMaximumVolume = #0.8
         } \violin
         %\new Staff \with {
