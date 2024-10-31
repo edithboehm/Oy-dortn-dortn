@@ -50,8 +50,8 @@ voice = \relative c' {
     e1~           | e2. e8 f    |
     g4 g g4. e8   | c2. e8 f    |
     g8 f e d e4 a | a2. a,4     |
-    c e g e       | f d e4. c8  |
-    a1~           | a2.
+    c e g e       | f d c4. h8  |
+    a1            | r2.
 }
 
 verseOne = \lyricmode {
