@@ -27,13 +27,13 @@
             \verseOne
         }
         \new Staff \with {
-            midiInstrument = #"drawbar organ"
-            midiMaximumVolume = #0.8
+            midiInstrument = #"viola"
+            midiMaximumVolume = #1.1
         } \violin
-        %\new Staff \with {
-        %    midiInstrument = #"accordion"
-        %    midiMaximumVolume = #0.8
-        %} \accordion
+        \new Staff \with {
+            midiInstrument = #"drawbar organ"
+            midiMaximumVolume = #0.9
+        } \accordion
     >>
     \layout { #(layout-set-staff-size 16) }
     \midi { }

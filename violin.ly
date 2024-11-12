@@ -4,7 +4,8 @@ violin = \relative c' {
 
     % verse 1
     r4
-    \repeat unfold 15 r1 r2. e8 c                    |
+    \repeat unfold 15
+    r1                | r2.\pp e8 c |
 
     % verse 2
     a1~               | a2. e'8 c  |
@@ -27,7 +28,7 @@ violin = \relative c' {
     a,1)              | r              |
 
     % solo
-    r8 h8 a h c4. h8  | a8 h c4 c2     |
+    r8\mf h8 a h c4. h8  | a8 h c4 c2     |
     r8 h8 a8 h c4. h8 | a8 h c4 c c8 d |
     e4 e e e          | g2 f8 e d c    |
     e1~               | e2. e8 f       |
@@ -37,7 +38,7 @@ violin = \relative c' {
     a1                | r              |
 
     % verse 4
-    a,2. c8 h         | a4 a2 c8 h         |
+    a,2.\pp c8 h         | a4 a2 c8 h         |
     a2. c8 h          | a4 a2.             |
     g1(               | a2)( h)(           |
     c4) e8 f g f e d  | e f e d c h r4     |
