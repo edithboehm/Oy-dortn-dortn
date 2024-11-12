@@ -46,6 +46,12 @@ violin = \relative c' {
     c)                | f8 e d c e d c h   |
     a1                | r8 f'' e d e d c h |
 
-    \repeat unfold 15 r1
-    r2.
+    a,1~              | a~          |
+    a~                | a2. e'8 f   |
+    g4 g g g          | c2 h8 a g f |
+    g1(               | g2.)  e8 f  |
+    g1(               | c,2.) e8 f  |
+    g f e d e4 c'4~   | 1           |
+    a,1(              | d2)( e)(    |
+    a,1)              | r2.
 }
