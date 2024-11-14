@@ -42,9 +42,9 @@ violin = \relative c' {
     a2. c8 h          | a4 a2.             |
     g1(               | a2)( h)(           |
     c4) e8 f g f e d  | e f e d c h r4     |
-    g1(               | e)(                |
+    g'1(               | e)(                |
     g)(               | a)(                |
-    c)                | f8 e d c e d c h   |
+    c)                | f,8 e d c e d c h   |
     a1                | r8 f'' e d e d c h |
 
     a,1~              | a~          |

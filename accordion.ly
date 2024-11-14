@@ -30,6 +30,16 @@ accordion = \relative c' {
     c2. r4       | r1               |
     r8 c4 h8 g2~ | g2. r4           |
 
-    \repeat unfold 47 r1
+    % solo
+    r1        | r2 e'2~       |
+    e1~       | e1(           |
+    e2)( f2)( | g2.) c,4      |
+    h c2.~    | c2. r4        |
+    h2. c4    | a1            |
+    g2 a4. h8 | e1~           |
+    e2. c8 h  | a4. h8 g4. h8 |
+    e,1~      | e2. r4        |
+
+    \repeat unfold 31 r1
     r2.
 }
