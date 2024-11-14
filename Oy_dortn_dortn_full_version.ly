@@ -34,6 +34,10 @@
             instrumentName = "Violin"
             shortInstrumentName = "Vln."
         } \violin
+        %\new Staff \with {
+        %    instrumentName = \markup { "Clarinette" \concat{ B \teeny \raise #0.4 \flat } }
+        %    shortInstrumentName = "Cla."
+        %} \transpose es f { \violin }
         \new Staff \with {
             midiInstrument = #"drawbar organ"
             midiMaximumVolume = #0.9
