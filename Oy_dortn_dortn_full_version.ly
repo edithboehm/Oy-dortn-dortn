@@ -1,5 +1,6 @@
 \version "2.24.4"
 \include "include.ly"
+\include "chords.ly"
 \include "violin.ly"
 \include "accordion.ly"
 
@@ -7,12 +8,13 @@
     <<
         \new ChordNames \with {
            midiMaximumVolume = #0.8
-       } \repeat unfold 6 \chordNames
+        } \chordNames
         \new Staff \with {
             midiMaximumVolume = #1
             instrumentName = "Melody"
             shortInstrumentName = "Mel."
-        }{
+        }
+        {
             \voicePartial \voice
             \voiceBeginning \voice
             \voiceBeginning \voice r4
@@ -21,6 +23,7 @@
             \voiceBeginning \voice
             \voiceEnd
         }
+
         \addlyrics {
             \verseOne
             \verseTwo
@@ -28,16 +31,14 @@
             \verseFour
             \verseOne
         }
+
         \new Staff \with {
             midiInstrument = #"viola"
             midiMaximumVolume = #1.1
             instrumentName = "Violin"
             shortInstrumentName = "Vln."
         } \violin
-        %\new Staff \with {
-        %    instrumentName = \markup { "Clarinette" \concat{ B \teeny \raise #0.4 \flat } }
-        %    shortInstrumentName = "Cla."
-        %} \transpose es f { \violin }
+
         \new Staff \with {
             midiInstrument = #"drawbar organ"
             midiMaximumVolume = #0.9
