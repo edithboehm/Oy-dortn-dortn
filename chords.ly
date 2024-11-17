@@ -1,15 +1,13 @@
 chordNames = \chordmode {
 
-    \set chordChanges = ##t
+  \set chordChanges = ##t
 
-    % Akkorde folgen hier.
+  % Akkorde folgen hier.
 
-    \repeat unfold 6 {
-      \partial 4
-      a4:m |
-      a1:m | a:m      |  a:m | a:m   |
-      c    | f2 g2    |  c1  | c     |
-      e1:m | c        |  e:m | f     |
-      a:m  | d2:m e:7 | a1:m | a2.:m
-    }
+  \partial 4
+  a4:m    |
+  a1:m    | a:m      |  a:m | a:m   |
+  c       | f2 g2    |  c1  | c     |
+  e1:m    | a:m      |  e:m | f     |
+  a2:m c2 | d2:m e:7 | a1:m | a2.:m
 }

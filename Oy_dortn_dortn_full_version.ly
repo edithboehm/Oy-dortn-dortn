@@ -5,47 +5,49 @@
 \include "accordion.ly"
 
 \score {
-    <<
-        \new ChordNames \with {
-           midiMaximumVolume = #0.8
-        } \chordNames
-        \new Staff \with {
-            midiMaximumVolume = #1
-            instrumentName = "Melody"
-            shortInstrumentName = "Mel."
-        }
-        {
-            \voicePartial \voice
-            \voiceBeginning \voice
-            \voiceBeginning \voice r4
-            \repeat unfold 15 r1 r2.
-            \voiceBeginning \voice
-            \voiceBeginning \voice
-            \voiceEnd
-        }
+  <<
+    \new ChordNames \with {
+       midiMaximumVolume = #0.8
+    } \repeat unfold 6 { \chordNames }
+    \new Staff \with {
+        midiMaximumVolume = #1
+        instrumentName = "Melody"
+        shortInstrumentName = "Mel."
+    }
+    {
+      \global
 
-        \addlyrics {
-            \verseOne
-            \verseTwo
-            \verseThree
-            \verseFour
-            \verseOne
-        }
+      \voicePartial \voice
+      \voiceBeginning \voice
+      \voiceBeginning \voice r4
+      \repeat unfold 15 r1 r2.
+      \voiceBeginning \voice
+      \voiceBeginning \voice
+      \voiceEnd
+    }
 
-        \new Staff \with {
-            midiInstrument = #"viola"
-            midiMaximumVolume = #1.1
-            instrumentName = "Violin"
-            shortInstrumentName = "Vln."
-        } \violin
+    \addlyrics {
+      \verseOne
+      \verseTwo
+      \verseThree
+      \verseFour
+      \verseOne
+    }
 
-        \new Staff \with {
-            midiInstrument = #"drawbar organ"
-            midiMaximumVolume = #0.9
-            instrumentName = "Accordion"
-            shortInstrumentName = "Acc."
-        } \accordion
-    >>
-    \layout { #(layout-set-staff-size 16) }
-    \midi { }
+    \new Staff \with {
+      midiInstrument = #"viola"
+      midiMaximumVolume = #1.1
+      instrumentName = "Violin"
+      shortInstrumentName = "Vln."
+    } \violin
+
+    \new Staff \with {
+      midiInstrument = #"drawbar organ"
+      midiMaximumVolume = #0.9
+      instrumentName = "Accordion"
+      shortInstrumentName = "Acc."
+    } \accordion
+  >>
+  \layout { #(layout-set-staff-size 16) }
+  \midi { }
 }
