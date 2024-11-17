@@ -13,8 +13,8 @@ accordion = \relative c' {
 
   % verse 2
   \repeat unfold 4 r1
-  e'1(           | d2 c4  h)      |
-  e1~            | e2. r4         |
+  e'1(           | d2 c4  h       |
+  e1)~            | e2. r4        |
   c1(            | a)             |
   h2. c4         | e1             |
   r1             | r              |
