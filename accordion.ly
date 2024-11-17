@@ -21,14 +21,14 @@ accordion = \relative c' {
   r4 e8( f as4 c | h8 a4 as8 a2)~ |
 
   % verse 3
-  a1           | r1               |
-  <c e>~       | <c e>            |
-  c            | a2.  c8 h        |
-  a4 g2 e4~    | e2. r4           |
-  r1           | c'2.~c8 h        |
-  e,2. e8 f    | g f e d e4  c'4~ |
-  c2. r4       | r1               |
-  r8 c4 h8 g2~ | g2. r4           |
+  a1             | r1               |
+  <c e>~         | <c e>            |
+  c              | a2.  c8 h        |
+  a4 g2 e4~      | e2. r4           |
+  r1             | c'2.~c8 h        |
+  e,2. e8 f      | g f e d e4  c'4~ |
+  c2. r4         | r1               |
+  r8 c4 a,2~ a8~ | a2. r4           |
 
   % solo
   r1               | r2 <e e'>2~   |
